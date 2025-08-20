@@ -1,6 +1,6 @@
-[submodule "client"]
-    path = client
+[submodule "client/Give-Get-client"]
+    path = client/Give-Get-client
     url = https://github.com/shulamit-h/Give-Get-client.git
-[submodule "server"]
-    path = server
+[submodule "server/GiveAndGet-server"]
+    path = server/GiveAndGet-server
     url = https://github.com/shulamit-work/GiveAndGet-server.git
