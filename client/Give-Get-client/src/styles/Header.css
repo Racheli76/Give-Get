@@ -1,0 +1,38 @@
+.header {
+    background: linear-gradient(135deg, #ff9a8b, #ff6f91); /* מעבר צבעים ורוד זוהר */
+    padding: 15px 0;
+    text-align: center;
+    color: var(--pearl-cream);
+    font-size: 1.8rem;
+    font-weight: bold;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: var(--pearl-cream);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffd3e6;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+}

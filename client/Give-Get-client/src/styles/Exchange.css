@@ -1,0 +1,186 @@
+@import './colors.css';
+.deals-container {
+  padding: 20px;
+  background-color: var(--light-yellow); /* צבע רקע עדין */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 0 auto; /* מרכז את התוכן */
+}
+
+.deals-container h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #2c3e50; /* צבע כותרת כהה */
+  text-align: center;
+  font-weight: bold;
+  border-bottom: 2px solid var(--pearl-cream); /* קו תחתון */
+  padding-bottom: 10px;
+}
+
+.deals-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.deal-item {
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: var(--pearl-cream);
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.deal-item:hover {
+  transform: translateY(-5px); /* אפקט הרמה */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* צל חזק יותר */
+}
+
+.deal-item div {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #34495e; /* צבע טקסט כהה */
+}
+
+.deal-item div strong {
+  color: #2c3e50; /* צבע טקסט מודגש */
+}
+
+.deal-item div.status {
+  font-weight: bold;
+  color: var(--light-blue); /* צבע סטטוס */
+}
+
+.deal-item div.date {
+  font-style: italic;
+  color: var(--light-yellow); /* צבע תאריך */
+}
+
+.deal-item div.user {
+  color: var(--soft-coral); /* צבע שמות משתמשים */
+}
+
+.deal-item div.talent {
+  color: var(--mint-green); /* צבע שמות כישרונות */
+}
+
+.no-deals-message {
+  padding: 20px;
+  margin: 20px auto;
+  /* background-color: var(--pearl-cream) !important; צבע רקע עדין */
+  background-color: var(--pearl-cream);
+  color: var(--pearl-coral); /* צבע טקסט אדום */
+  border: 1px solid #f5c6cb; /* מסגרת בצבע עדין */
+  border-radius: 8px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  max-width: 600px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.like-button,
+.dislike-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.like-button:hover {
+  background-color: #d4edda; /* צבע ירוק עדין */
+  transform: scale(1.1); /* הגדלה קלה */
+}
+
+.dislike-button:hover {
+  background-color: #f8d7da; /* צבע אדום עדין */
+  transform: scale(1.1); /* הגדלה קלה */
+}
+
+.like-button svg,
+.dislike-button svg {
+  font-size: 20px; /* גודל האייקון */
+}
+
+.like-button.active svg {
+  color: var(--pearl-cream)fff;
+}
+
+.dislike-button.active svg {
+  color: var(--pearl-cream)fff;
+}
+.like-button.active {
+  background-color: #c3e6cb; /* צבע ירוק בהיר */
+  color: #155724; /* צבע טקסט ירוק כהה */
+}
+
+.dislike-button.active {
+  background-color: #f5c6cb; /* צבע אדום בהיר */
+  color: #721c24; /* צבע טקסט אדום כהה */
+}
+
+.like-button.active:hover,
+.dislike-button.active:hover {
+  transform: none; /* ביטול אפקט ההגדלה */
+  cursor: default; /* שינוי הסמן למצב ברירת מחדל */
+}
+
+.notification {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.notification.confirmed {
+  background-color: #ffe6cc; /* צבע רקע הודעה שהמשתמש השני אישר סיום עסקה */
+  color: #e67e22; /* צבע טקסט הודעה שהמשתמש השני אישר סיום עסקה */
+}
+
+.notification.self-confirmed {
+  background-color: #d4edda; /* צבע רקע הודעה שהמשתמש עצמו אישר סיום עסקה */
+  color: #155724; /* צבע טקסט הודעה שהמשתמש עצמו אישר סיום עסקה */
+}
+
+.MuiTabs-root {
+  margin-bottom: 20px;
+}
+
+.MuiTab-root {
+  text-transform: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+.MuiTab-root.Mui-selected {
+  color: var(--light-yellow);
+  font-weight: bold;
+}
+
+.chat-button{
+  background-color: var(--soft-coral);
+  color: var(--pearl-cream);
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}

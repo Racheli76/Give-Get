@@ -1,0 +1,28 @@
+.chats-page {
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .chats-page h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .chats-page ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .chats-page li {
+    padding: 10px;
+    margin: 10px 0;
+    background-color: var(--pearl-cream);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .chats-page li:hover {
+    background-color: #f0f0f0;
+  }

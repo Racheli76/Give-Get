@@ -1,0 +1,36 @@
+.comments-container {
+  margin-top: 5%;
+}
+
+.comment-card {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  flex: 1 1 calc(50% - 1rem); /* מאפשר לשתי תגובות להופיע בשורה */
+  box-sizing: border-box;
+}
+
+.comment-card .MuiAvatar-root {
+  margin-right: 1rem;
+}
+
+.add-comment-card {
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.add-comment-card .MuiTextField-root {
+  margin-bottom: 1rem;
+}
+
+.add-comment-card .MuiButton-root {
+  display: block;
+  margin-left: auto;
+}
+
+.comments-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}

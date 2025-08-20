@@ -1,0 +1,56 @@
+@import './colors.css';
+
+.top-users-container {
+  /* padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center; */
+}
+
+.top-users-container h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.top-users-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.top-user-item {
+  background-color: var(--pearl-cream);
+  border: 1px solid var(--soft-coral);
+  border-radius: 8px;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.top-user-item:hover {
+  transform: scale(1.05);
+}
+
+.user-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.user-details h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #555;
+}
+
+.user-details p {
+  margin: 5px 0 0;
+  color: #777;
+}

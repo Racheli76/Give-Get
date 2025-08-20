@@ -1,0 +1,72 @@
+@import './colors.css';
+
+html, body {
+  height: 100%; /* כל הגובה של הדף */
+  margin: 0; /* ביטול מרווחים דיפולטיביים */
+}
+
+/* עיצוב כללי ל-HeaderFooter */
+.layout-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* הגדרת גובה מינימלי לדף */
+}
+
+.content-container {
+  flex: 1; /* מבטיח שהתוכן יתפוס את כל הגובה הפנוי */
+  width: 100%;
+  overflow: auto; /* אם התוכן ארוך, הוא יגלול */
+}
+
+.app-bar {
+  /* background-color: #e8a3be;  */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.app-title {
+  flex-grow: 1;
+  margin-left: 16px;
+  padding: 20px;
+  color: var(--pearl-cream);
+  animation: fadeInOut 10s linear infinite;
+}
+
+/* אנימציה fade-in-out */
+@keyframes fadeInOut {
+  0%, 20%, 80%, 100% { opacity: 0; }
+  40%, 60% { opacity: 1; }
+}
+
+.footer {
+  background-color: var(--soft-yellow);
+  padding: 30px 0;
+  color: var(--pearl-cream);
+  text-align: center;
+  width: 100%;
+  margin-top: auto; /* דוחף את הפוטר לתחתית */
+}
+
+
+  .layout-container {
+    width: 1520px;
+  }
+
+  .user-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .user-name {
+    margin-left: 10px;
+    color: var(--pearl-cream);
+  }
+
+  .logo {
+    height: 50px; /* או גודל אחר לפי הצורך */
+    margin-right: 15px;
+}
+
+#footer-text{
+  color: var(--soft-coral);
+}

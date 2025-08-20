@@ -1,0 +1,97 @@
+.talents-container {
+  margin-top: 10% !important;
+  margin-bottom: 10% !important;
+  direction: rtl;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.talent-card {
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: right;
+  /* Align text to the right */
+}
+
+.talents-container {
+  margin-top: 80px;
+  direction: rtl;
+  /* ימין לשמאל */
+}
+
+.talent-card .talent-name {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: var(--light-blue);
+  margin-bottom: 10px;
+  text-align: center;
+  /* Center the title */
+}
+
+.talent-card .sub-talents {
+  margin-top: 10px;
+  padding-left: 20px;
+  border-left: 3px solid var(--mint-green);
+}
+
+.talent-card .sub-talents .sub-talent {
+  margin-bottom: 5px;
+  font-size: 1.2em;
+  color: var(--mint-green);
+  transition: color 0.3s ease;
+  text-align: right;
+  /* Align text to the right */
+}
+
+.talent-card .sub-talents .sub-talent:hover {
+  color: var(--soft-coral);
+}
+
+.add-talent-card {
+  padding: 20px;
+  width: 100%;
+  /* תופס את כל הרוחב */
+  max-width: 600px;
+  /* מגביל את הרוחב המקסימלי */
+  background-color: var(--pearl-cream)fff;
+  border: 2px dashed var(--soft-coral);
+  border-radius: 8px;
+  text-align: right;
+  direction: rtl;
+  /* ימין לשמאל */
+}
+
+.add-talent-card h6 {
+  color: var(--soft-coral);
+  text-align: center;
+  /* Center the title */
+}
+
+.add-talent-card .MuiFormControl-root,
+.add-talent-card .MuiTextField-root {
+  margin-bottom: 15px;
+}
+
+.add-talent-card .MuiButton-containedPrimary {
+  background-color: var(--soft-coral);
+}
+
+.snackbar-success {
+  background-color: var(--mint-green);
+}
+
+.add-talent-wrapper {
+  width: 100%;
+  /* תופס את כל הרוחב */
+  margin-top: 40px;
+  /* מרווח מעל */
+  display: flex;
+  /* מבטיח שהרכיב יופיע בשורה נפרדת */
+  justify-content: center;
+  /* מרכז את התוכן */
+}
