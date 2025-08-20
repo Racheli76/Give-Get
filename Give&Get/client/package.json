@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@microsoft/signalr": "^8.0.7",
+    "@mui/icons-material": "^6.4.6",
+    "@mui/material": "^6.4.6",
+    "framer": "^2.4.1",
+    "framer-motion": "^12.6.2",
+    "jwt-decode": "^4.0.0",
+    "react-router-dom": "^7.2.0"
+  },
+  "devDependencies": {
+    "@types/jwt-decode": "^3.1.0"
+  }
+}
