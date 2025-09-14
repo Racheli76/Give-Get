@@ -1,81 +1,73 @@
-# Give&Get – פלטפורמת שיתוף כישרונות
+# Give & Get
 
-**Give&Get** הוא פרויקט חדשני לעידוד נתינה, שיתוף ידע וכישרונות בין אנשים, המבוסס על התאמות חכמות בין משתמשים. המערכת פותחה ב-.NET Core (C#) בצד שרת וב-React בצד לקוח, ומציעה חוויית משתמש מתקדמת, מאובטחת ודינמית.
-
----
-
-## מטרות הפרויקט
-
-- **עידוד נתינה ושיתוף ידע**: לאפשר לכל אדם להציע את כישוריו ולבקש ללמוד תחומים חדשים.
-- **התאמות חכמות**: התאמה אוטומטית בין משתמשים על בסיס כישורים מוצעים וכישורים מבוקשים, באמצעות אלגוריתם מתקדם.
-- **תקשורת ישירה**: לאפשר למשתמשים מותאמים לשוחח בצ'אט בזמן אמת ולבצע עסקאות של שיתוף ידע.
+> Welcome to the Give & Get project!
+>
+> *Empowering people to give, grow, and get inspired.*
 
 ---
 
-## טכנולוגיות עיקריות
-
-- **Backend**:  
-  - .NET Core (C#)
-  - מבנה 4 שכבות: Mock, Repository, Service, Web API
-  - Entity Framework Core  
-  - SignalR (צ'אט בזמן אמת)
-  - שילוב APIs חיצוניים (משפטי השראה, שליחת מיילים)
-
-- **Frontend**:  
-  - React  
-  - TypeScript  
-  - Material-UI  
-  - Axios (קריאות API)
+## Overview
+Give & Get is a web platform for sharing talents, learning new skills, and connecting people through smart matching and real-time chat. The project is built with modern technologies and a modular architecture for scalability and maintainability.
 
 ---
 
-## תכונות מרכזיות
-
-- **הרשמה והתחברות**: משתמשים יכולים להירשם, להגדיר פרטי פרופיל, להעלות תמונת פרופיל ולהזין כישורים.
-- **ניהול כישרונות**: כל משתמש מגדיר כישורים שהוא מציע וכישורים שהוא מעוניין ללמוד. ניתן להוסיף תתי-כישרונות.
-- **התאמות אוטומטיות**: אלגוריתם התאמה מציג לכל משתמש את ההתאמות הטובות ביותר עבורו.
-- **ניהול עסקאות**: לאחר אישור התאמה, נוצרת עסקה בין המשתמשים, עם אפשרות לעקוב אחרי סטטוס העסקה.
-- **צ'אט אישי**: צ'אט בזמן אמת בין משתמשים מותאמים, מבוסס SignalR.
-- **בקשות להוספת כישרון**: משתמשים יכולים להגיש בקשה להוספת כישרון חדש. הבקשה נשלחת למנהל האתר במייל, והמנהל יכול לאשר, לעדכן או למחוק.
-- **API משפטי השראה**: הצגת משפטי השראה מתורגמים לעברית, להעצמת המשתמשים.
-- **מערכת ניקוד**: לכל משתמש יש ניקוד, המתעדכן לפי פעילותו באתר.
-- **ניהול משתמשים**: מנהל האתר יכול לצxxx בבקשות, לנהל משתמשים וכישרונות.
-
----
-
-## מבנה הפרויקט
-
-- **Mock**: שכבת נתונים מדומה לצורך פיתוח ובדיקות.
-- **Repositories**: גישה למסד הנתונים, מימוש לוגיקת CRUD.
-- **Services**: לוגיקה עסקית, התאמות, שליחת מיילים, ניהול עסקאות.
-- **Web API**: חשיפת נקודות קצה REST, ניהול הרשאות, אינטגרציה עם SignalR.
-- **Client (React)**: ממשק משתמש אינטואיטיבי, טפסים, צ'אט, ניהול פרופיל, הצגת התאמות.
+## Features
+- **Talent Exchange:** Offer your talents and request to learn new ones. Each user can define offered and wanted skills, including sub-talents.
+- **Smart Matching:** Automatic matching between users based on their skills and interests using a custom algorithm.
+- **Profile Management:** Register, login, edit your profile, upload a profile picture, and manage your talents.
+- **Real-Time Chat:** Chat with matched users using SignalR-based messaging.
+- **Transaction Management:** Track the status of talent exchanges and manage deals.
+- **Comments & Feedback:** Leave comments and feedback to foster a supportive community.
+- **Talent Requests:** Request new talents to be added. Requests are sent to the admin via email for approval.
+- **Inspiration API:** Get motivational quotes translated to Hebrew.
+- **Scoring System:** User scores are updated based on activity.
+- **Admin Panel:** Admin can manage users, talents, and requests.
 
 ---
 
-## ערך מוסף
+## Technologies Used
 
-- **חוויית משתמש עשירה**: שילוב משפטי השראה, צ'אט בזמן אמת, ניהול אישי של כישרונות.
-- **אבטחה**: שימוש ב-JWT, הרשאות לפי תפקיד (משתמש/מנהל).
-- **קוד מסודר ומודולרי**: מתודולוגיית 4 שכבות, הפרדה ברורה בין לוגיקה עסקית, נתונים וממשק.
-- **התאמה אישית**: כל משתמש מקבל התאמות ייחודיות, יכול לעדכן פרופיל וכישרונות בכל עת.
-
----
-
-## איך להפעיל?
-
-1. **שרת**:  
-   - התקן את כל התלויות ב-.NET Core  
-   - הגדר את חיבורי ה-DB בקובץ `appsettings.json`
-   - הפעל את הפרויקט מהתיקיה `GiveAndGet-server`
-
-2. **לקוח**:  
-   - התקן את כל התלויות (`npm install`)
-   - הגדר את כתובת ה-API בקובץ `.env`
-   - הפעל את הפרויקט (`npm start`)
-
+| Frontend | Backend | Database | Real-Time | Email |
+|:---:|:---:|:---:|:---:|:---:|
+| ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) <br> ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white) <br> ![Material-UI](https://img.shields.io/badge/MUI-007FFF?style=for-the-badge&logo=mui&logoColor=white) <br> ![Axios](https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge&logo=axios&logoColor=white) | ![ASP.NET Core](https://img.shields.io/badge/ASP.NET_Core-512BD4?style=for-the-badge&logo=.net&logoColor=white) <br> ![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white) <br> ![Entity Framework](https://img.shields.io/badge/Entity_Framework-68217A?style=for-the-badge&logo=entity-framework&logoColor=white) | ![SQL Server](https://img.shields.io/badge/SQL_Server-CC2927?style=for-the-badge&logo=microsoft-sql-server&logoColor=white) | ![SignalR](https://img.shields.io/badge/SignalR-32CD32?style=for-the-badge&logo=signalr&logoColor=white) | ![MailKit](https://img.shields.io/badge/MailKit-0072C6?style=for-the-badge&logo=mail-dot-ru&logoColor=white) |
 
 ---
 
+## Project Structure
+- `client/Give-Get-client/` – React + TypeScript frontend
+- `server/GiveAndGet-server/` – ASP.NET Core backend (Web API, Services, Repositories, Mock)
 
-**בהצלחה בשיתוף הכישרונות!**
+---
+
+## Getting Started
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Racheli76/Give-Get.git
+   ```
+2. **Install dependencies:**
+   - Frontend:
+     ```bash
+     cd client/Give-Get-client
+     npm install
+     ```
+   - Backend:
+     Open `GiveAndGet-server` in Visual Studio and restore NuGet packages.
+3. **Run the applications:**
+   - Frontend:
+     ```bash
+     npm start
+     ```
+   - Backend:
+     Run the WebAPI project from Visual Studio.
+
+---
+
+## Value Proposition
+Give & Get is more than a talent exchange. It is a community built on trust, generosity, and growth. By participating, you:
+- Expand your skills and knowledge
+- Build meaningful connections
+- Inspire and be inspired
+- Make a positive impact on others
+
+---
+
