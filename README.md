@@ -71,3 +71,10 @@ Give & Get is more than a talent exchange. It is a community built on trust, gen
 
 ---
 
+## 👨‍💻 Developers
+
+**Racheli Cohen**  
+https://github.com/Racheli76
+
+**Shulamit Halbershtadt**  
+https://github.com/Shu6136713
