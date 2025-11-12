@@ -2,7 +2,7 @@
 
 **Give And Get** is an ASP.NET Core server designed to connect people based on skills, talents, and interests. The system allows users to teach and learn from each other in a **secure, intelligent, and controlled** way. This project demonstrates a combination of **technical creativity, professional skill, and social contribution**.  
 
-[Frontend/Client repository](https://github.com/shulamit-h/Give-Get-client) – full user interface for displaying matches, chat, and personal management.
+[Frontend/Client repository](https://github.com/Racheli76/Give-Get/blob/main/client/Give-Get-client) – full user interface for displaying matches, chat, and personal management.
 
 ---
 
