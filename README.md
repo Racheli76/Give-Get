@@ -11,6 +11,13 @@ Give & Get is a web platform for sharing talents, learning new skills, and conne
 
 ---
 
+### ✨ See it in Action
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/777e8e5d-b2c6-4ca5-b9fc-c4907dcffbe2" width="500" alt="Give & Get Project Demo">
+</p>
+
+---
+
 ## Features
 - **Talent Exchange:** Offer your talents and request to learn new ones. Each user can define offered and wanted skills, including sub-talents.
 - **Smart Matching:** Automatic matching between users based on their skills and interests using a custom algorithm.
